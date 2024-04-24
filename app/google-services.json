@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "440316992923",
+    "firebase_url": "https://mindlift-5b614-default-rtdb.firebaseio.com",
+    "project_id": "mindlift-5b614",
+    "storage_bucket": "mindlift-5b614.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440316992923:android:1d13c374180134947a953e",
+        "android_client_info": {
+          "package_name": "com.example.sampledbconnection"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj5knGBp0w7J8HT4he5XBIwZTnlm0XgWc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440316992923:android:5df3983a37c80f7d7a953e",
+        "android_client_info": {
+          "package_name": "com.mindlift.android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj5knGBp0w7J8HT4he5XBIwZTnlm0XgWc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
