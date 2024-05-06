@@ -4,7 +4,7 @@ MindLift is a mental wellness application designed to provide users a private sp
 
 # Component
 
-# 1.Authentication Components
+# 1. Authentication Components
 The app lets users sign up when an account is created for them, and the credentials are stored in the Firebase database. The user then logs in using their credentials, and the sign-in is authenticated, validating the username and password from Firebase. Once the user credentials are validated, the username is set in the UserViewModel to use the user sessions across different components. The user then lands on the Home Screen, where the four elements of the applications are displayed. When the user Signs out, the username in the UserViewModel is cleared, and the user lands on the login page.
 
 # 2. Music Component
@@ -21,4 +21,44 @@ The user can speak out their thoughts in the microphone; the spoken notes are th
 # 5. Map Component
 The map component is interactive and customized. It is not only used to locate users’ current location but also to immediately provide users with nearby places to work out and relax. It allows users to write down their review on a specific gym in a straightforward and simple way.
 
+# Advanced Features
+1. The use of Google Maps
 
+   Google Maps is used to show the users’ current location and nearby gyms with markers. When a user clicks the marker, a review log will show up for the user to write a comment and       rate the gym.
+
+2. Amazon web services (AWS) or cloud storage
+   
+   The cloud storage used is Google Firebase. In firebase the user credentials along with diary notes, the user’s mood and the accuracy of the yoga poses performed for every date the      user makes an entry are stored. The reviews about the gyms and the songs and genres are also stored in the database.
+
+3. Voice Interaction
+   The user speaks out the diary notes, which is then converted to text and stored in the database for the user to view it on the View Diary Screen. The transcripted diary notes are       also used to predict the user’s mood by passing it to the gpt API.
+
+4. Collecting, storing and analyzing sensor data to be used by the application
+   
+   a. Camera Sensor
+   
+      The camera sensor is used to display the front-facing cameras in the personalized virtual yoga instructor screens. We overlay the detected key points on the camera view so that         the user can get visual cues on their yoga stances in real-time. We take into account the camera sensor orientation and device orientation to correctly display the captured             images by the sensor to the user’s view port.
+
+   b. Microphone
+
+      The diary feature allows users to record their diary notes through using the microphone sensor.
+   
+5. Context awareness(Changing colors or appearance in reaction to user movement, sensed data, etc)
+
+   a. Mood Based Recommendations
+   
+      We have defined four distinct moods: happy, sad, fear and angry. These moods are predicted based on the user's diary entries. In order to leverage the users’ mental state, each 
+      mood is matched with a corresponding genre: Happy→Classical, Sad→Hip Hop, Fear → Country and Angry→Electronic. This recommendation will appear at the top of the screen once the 
+      users click into the music page.
+   
+   b. Changing Background
+
+      The background for the music list screen changes based on the genre to which the particular music list belongs to.
+   
+6. Push notifications
+
+   In the Firestore, the information of the best rated gym and its ratings is extracted first and then it will be updated to the users as push notifications. In this way the users will    know which gym is the most popular from time to time.
+
+   
+   
+   
